@@ -7,7 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        "dark-shade": "rgb(35, 24, 29)"
+        "main": "#505D4E",
+        "dark-shade": "#23181D",
+        "dark-accent": "#062041",
+        "light-shade": "#6070B9",
+        "black": "#0E1111",
+        "white": "#ECE5E6",
       }
     },
   },
