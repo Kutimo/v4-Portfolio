@@ -1,7 +1,16 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { navLinks } from "../data/NavConfig";
 import logo from "$svg/logo.svg";
-import { Link } from "react-router-dom";
+import HamMenuIcon from "$svg/hamMenu.svg";
+
 export default function Navigation() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  function toggleMenu() {
+    setShowMenu(!showMenu);
+  }
+
   return (
     <header className="flex justify-between p-3.5 border-b-2 border-white">
       <Link to="/">
@@ -12,8 +21,22 @@ export default function Navigation() {
           width={175}
         />
       </Link>
-      <nav className="">
-        <ul className="flex items-center">
+      <nav
+        className={`w-full flex flex-col md:flex-row md:justify-end transition-all duration-500 ease-in-out ${
+          showMenu ? "bg-Cotton" : "bg-none"
+        } ${showMenu ? "fixed top-0 left-0 w-full h-full z-100" : ""}`}>
+        <a
+          className=""
+          onClick={toggleMenu}>
+          <img
+            src={HamMenuIcon}
+            height={48}
+            width={48}
+            alt={showMenu ? "Close menu" : "MenuIcon"}
+            className={`${showMenu ? "absolute top-0 right-0 p-2" : ""}`}
+          />
+        </a>
+        <ul className="flex items-center justify-evenly w-full md:hidden">
           {navLinks &&
             navLinks.map(({ name, url }, i) => (
               <li
