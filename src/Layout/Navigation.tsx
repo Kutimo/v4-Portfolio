@@ -23,8 +23,8 @@ export default function Navigation() {
         />
       </Link>
       <nav
-        className={` flex flex-col md:flex-row md:justify-end transition-all duration-500 ease-in-out z-40 ${
-          showMenu ? "bg-white" : "bg-none"
+        className={` flex flex-col md:flex-row md:justify-end transition-all duration-500 ease-in-out z-10 ${
+          showMenu ? "bg-main" : "bg-none"
         } ${showMenu ? "fixed top-0 left-0 w-full h-full z-100" : ""}`}>
         <img
           src={showMenu ? closeIcon : hamMenuIcon}
@@ -35,19 +35,26 @@ export default function Navigation() {
           onClick={toggleMenu}
         />
         <ul
-          className={`flex  md:flex md:flex-row items-center text-center  ${
+          className={`flex md:flex md:flex-row items-center text-center mt-16 md:mt-0 divide-y-2 divide-light-shade-100 md:divide-none ${
             showMenu ? "flex-col" : "hidden"
-          } mt-16 md:mt-0`}>
+          } `}>
           {navLinks &&
-            navLinks.map(({ name, url }, i) => (
+            navLinks.map(({ name, url, icon }, i) => (
               <li
                 key={i}
-                className={` m-2 align-middle ${showMenu ? "" : "hidden"}}`}>
+                className={` w-full ${showMenu ? "" : "hidden"}}`}>
                 <a
                   href={url}
-                  className={`text-black md:text-white hover:bg-white hover:text-black p-2 `}
+                  className="flex justify-center relative text-black md:text-white hover:bg-white hover:text-black md:m-2 p-5 md:p-2"
                   onClick={toggleMenu}>
                   {name}
+                  <img
+                    src={icon}
+                    alt={icon}
+                    height={24}
+                    width={24}
+                    className="absolute right-32 md:hidden"
+                  />
                 </a>
               </li>
             ))}

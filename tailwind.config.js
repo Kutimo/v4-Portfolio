@@ -21,6 +21,9 @@ export default {
       dropShadow: {
         "lg-black": '5px 5px 0 rgb(0 0 0 / 0.7)'
       },
+      content: {
+        'aboutIcon': 'url("/svg/navIcons/aboutIcon.svg")',
+      }
     },
   },
   plugins: [],
