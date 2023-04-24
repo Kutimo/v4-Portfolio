@@ -20,7 +20,7 @@ export default function Navigation() {
   }
 
   return (
-    <header className="flex justify-between p-3.5 border-b-2 border-white">
+    <header className="flex justify-between border-b-2 border-white p-3.5">
       <Link to="/">
         <img
           src={logo}
@@ -30,19 +30,19 @@ export default function Navigation() {
         />
       </Link>
       <nav
-        className={` flex flex-col md:flex-row md:justify-end transition-all duration-500 ease-in-out z-10 ${
+        className={` z-10 flex flex-col transition-all duration-500 ease-in-out md:flex-row md:justify-end ${
           showMenu ? "bg-main" : "bg-none"
-        } ${showMenu ? "fixed top-0 left-0 w-full h-full z-100" : ""}`}>
+        } ${showMenu ? "z-100 fixed left-0 top-0 h-full w-full" : ""}`}>
         <img
           src={showMenu ? closeIcon : hamMenuIcon}
           height={48}
           width={48}
           alt={showMenu ? "Close menu" : "MenuIcon"}
-          className="md:hidden absolute top-2 right-2 m-3.5 "
+          className="absolute right-2 top-2 m-3.5 md:hidden "
           onClick={toggleMenu}
         />
         <ul
-          className={`flex md:flex md:flex-row items-center text-center mt-16 md:mt-0 divide-y-2 divide-light-shade-100 md:divide-none ${
+          className={`mt-16 flex items-center divide-y-2 divide-light-shade-100 text-center md:mt-0 md:flex md:flex-row md:divide-none ${
             showMenu ? "flex-col" : "hidden"
           } `}>
           {navLinks &&
@@ -52,7 +52,7 @@ export default function Navigation() {
                 className={` w-full ${showMenu ? "" : "hidden"}}`}>
                 <a
                   href={url}
-                  className="relative flex justify-center p-5 text-black hover:underline decoration-2 underline-offset-4 md:text-white md:m-2 md:p-2"
+                  className="relative flex justify-center p-5 font-sans text-black font-2 decoration-2 underline-offset-4 hover:underline md:m-2 md:p-2 md:text-white"
                   onClick={handleLinkClick}>
                   {name}
                   <img
