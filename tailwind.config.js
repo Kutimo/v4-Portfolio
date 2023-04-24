@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      "sans": ['Source Sans Pro', 'sans-serif', 'Helvetica'],
+      "serif": ['Source serif Pro', 'serif', 'Times New Roman'],
+    },
     extend: {
       colors: {
         "main": "#505D4E",
