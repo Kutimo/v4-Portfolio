@@ -52,7 +52,7 @@ export default function Navigation() {
                 className={` w-full ${showMenu ? "" : "hidden"}}`}>
                 <a
                   href={url}
-                  className="relative flex justify-center p-5 text-black md:text-white hover:bg-white hover:text-black md:m-2 md:p-2"
+                  className="relative flex justify-center p-5 text-black hover:underline decoration-2 underline-offset-4 md:text-white md:m-2 md:p-2"
                   onClick={handleLinkClick}>
                   {name}
                   <img
