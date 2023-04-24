@@ -12,6 +12,13 @@ export default function Navigation() {
     setShowMenu(!showMenu);
   }
 
+  // Since there is no page redirect with a link or route, there is a check to see if the menu is open when a <a> tag is clicked in nav.
+  function handleLinkClick() {
+    if (showMenu) {
+      setShowMenu(false);
+    }
+  }
+
   return (
     <header className="flex justify-between p-3.5 border-b-2 border-white">
       <Link to="/">
@@ -45,8 +52,8 @@ export default function Navigation() {
                 className={` w-full ${showMenu ? "" : "hidden"}}`}>
                 <a
                   href={url}
-                  className="flex justify-center relative text-black md:text-white hover:bg-white hover:text-black md:m-2 p-5 md:p-2"
-                  onClick={toggleMenu}>
+                  className="relative flex justify-center p-5 text-black md:text-white hover:bg-white hover:text-black md:m-2 md:p-2"
+                  onClick={handleLinkClick}>
                   {name}
                   <img
                     src={icon}
