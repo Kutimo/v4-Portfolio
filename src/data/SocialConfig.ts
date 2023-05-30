@@ -7,4 +7,4 @@ export const socialMedia: Array<{ name: string; url: string }> = [
     name: "Linkedin",
     url: "https://www.linkedin.com",
   },
-];
+]

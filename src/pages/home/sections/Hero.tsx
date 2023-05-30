@@ -1,6 +1,6 @@
-import { TypewriterEffect } from "$components/Typewriter";
-import bracketLeft from "$svg/bracket_left.svg";
-import bracketRight from "$svg/bracket_right.svg";
+import { TypewriterEffect } from "$components/Typewriter"
+import bracketLeft from "$svg/bracket_left.svg"
+import bracketRight from "$svg/bracket_right.svg"
 
 export default function Hero() {
   return (
@@ -15,12 +15,13 @@ export default function Hero() {
         </h2>
         <div className="flex w-fit flex-col items-start p-2 text-light-shade-200">
           <p className="mt-10 w-3/4 font-serif text-xl md:w-96">
-            As a developer, I strive to pay close attention to even the smallest details that can make a big difference
-            for your project and brand.
+            As a developer, I strive to pay close attention to even the smallest details
+            that can make a big difference for your project and brand.
           </p>
           <a
             href="#projects"
-            className="border-light mt-10 border-2 border-light-shade-400 p-3 text-xl font-medium text-light-shade-100 shadow-md transition-all duration-300 ease-in hover:rounded-none hover:border-light-shade-200 hover:bg-light-shade-400 hover:text-black">
+            className="border-light mt-10 border-2 border-light-shade-400 p-3 text-xl font-medium text-light-shade-100 shadow-md transition-all duration-300 ease-in hover:rounded-none hover:border-light-shade-200 hover:bg-light-shade-400 hover:text-black"
+          >
             View portfolio
           </a>
         </div>
@@ -40,5 +41,5 @@ export default function Hero() {
         />
       </div>
     </section>
-  );
+  )
 }

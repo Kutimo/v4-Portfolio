@@ -1,9 +1,3 @@
 export default function About() {
-  return (
-    <section
-      id="about"
-      className="h-fit mt-20">
-    
-    </section>
-  );
+  return <section id="about" className="mt-20 h-fit"></section>
 }

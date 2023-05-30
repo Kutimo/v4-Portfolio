@@ -22,9 +22,13 @@
       "$layout/*": ["./src/components/layout/*"],
       "$home-sections/*": ["./src/pages/home/sections/*"],
       "$images/*": ["./src/assets/images/*"],
-      "$svg/*": ["./src/assets/svg/*"],
+      "$svg/*": ["./src/assets/svg/*"]
     },
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": [".eslintrc.cjs", "src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
