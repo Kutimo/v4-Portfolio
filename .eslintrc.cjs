@@ -13,4 +13,5 @@ module.exports = {
     "react-refresh/only-export-components": "warn",
     "react/react-in-jsx-scope": "off",
   },
+  "root": true,
 }
