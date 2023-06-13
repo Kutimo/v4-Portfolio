@@ -56,7 +56,7 @@ export default function ColorTests() {
           </div>
         </div>
       </div>
-      // section 3
+      {/*  section 3 */}
       <div className="flex justify-center gap-2 p-10">
         <div className="flex h-44 w-44 items-center justify-center bg-black">
           <p className="p-2 text-white">bg-black</p>
@@ -74,7 +74,7 @@ export default function ColorTests() {
           <p className="p-2 text-white">lorem dolor</p>
         </div>
       </div>
-      // section 4
+      {/* // section 4 */}
       <div className="flex justify-center gap-2 p-10">
         <div className="flex h-44 w-44 items-center justify-center bg-black">
           <p className="p-2 text-white">bg-black</p>
