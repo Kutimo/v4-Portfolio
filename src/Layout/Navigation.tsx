@@ -20,9 +20,9 @@ export default function Navigation() {
   }
 
   return (
-    <header className="flex justify-between border-b-2 border-white p-3.5">
+    <header className="flex content-center justify-between border-b-2 border-white p-3.5">
       <Link to="/">
-        <img src={logo} alt="logo" height={75} width={175} />
+        <img src={logo} alt="logo" height={75} width={175} className="h-full" />
       </Link>
       <nav
         className={` z-10 flex flex-col transition-all duration-500 ease-in-out md:flex-row md:justify-end ${
