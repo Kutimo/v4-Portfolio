@@ -9,8 +9,8 @@ import svelteIcon from "$svg/tech/Svelte_logo.svg"
 import viteIcon from "$svg/tech/Vitejs_Logo.svg"
 import gitIcon from "$svg/tech/GitHub_Logo.svg"
 import gitlabIcon from "$svg/tech/Gitlab_Logo.svg"
-import AtlassianIcon from "$svg/tech/Atlassian_Logo.svg"
-import test from "$svg/tech/test.svg"
+import atlassianIcon from "$svg/tech/Atlassian_Logo.svg"
+import figmaIcon from "$svg/tech/Figma_logo.svg"
 
 export const TechIcons: Array<{ name: string; xp: number; icon: string }> = [
   {
@@ -70,12 +70,12 @@ export const TechIcons: Array<{ name: string; xp: number; icon: string }> = [
   },
   {
     name: "Atlassian",
-    icon: AtlassianIcon,
+    icon: atlassianIcon,
     xp: 2,
   },
   {
-    name: "test",
-    icon: test,
+    name: "Figma",
+    icon: figmaIcon,
     xp: 2,
   },
 ]

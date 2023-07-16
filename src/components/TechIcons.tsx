@@ -6,9 +6,14 @@ export default function TechIconsWrapper() {
       {TechIcons &&
         TechIcons.map(({ name, xp, icon }, i) => {
           return (
-            <div key={i} className="m-2 h-32 w-32  p-2.5 pb-7 ">
-              <img src={icon} alt={name} height={110} width={110} className="h-full " />
-              {icon}
+            <div key={i} className="pointer-events-none m-2 h-32 w-32 p-2.5 pb-7 ">
+              <img
+                src={icon}
+                alt={name}
+                height={110}
+                width={110}
+                className="h-full shadow-white drop-shadow-xl"
+              />
               <p className="p-1 text-center text-lg">{name}</p>
               {/* <p>{xp}</p> */}
             </div>
