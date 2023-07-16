@@ -12,70 +12,70 @@ import gitlabIcon from "$svg/tech/Gitlab_Logo.svg"
 import atlassianIcon from "$svg/tech/Atlassian_Logo.svg"
 import figmaIcon from "$svg/tech/Figma_logo.svg"
 
-export const TechIcons: Array<{ name: string; xp: number; icon: string }> = [
+export const TechIcons: Array<{ name: string; xp: string; icon: string }> = [
   {
     name: "HTML",
     icon: htmlIcon,
-    xp: 3,
+    xp: "90%",
   },
   {
     name: "CSS",
     icon: cssIcon,
-    xp: 3,
+    xp: "90%",
   },
   {
     name: "Tailwind",
     icon: tailWindIcon,
-    xp: 3,
+    xp: "85%",
   },
   {
     name: "JavaScript",
     icon: jsIcon,
-    xp: 3,
+    xp: "85%",
   },
   {
     name: "TypeScript",
     icon: tsIcon,
-    xp: 2,
+    xp: "55%",
   },
   {
     name: "Node",
     icon: nodeIcon,
-    xp: 2,
+    xp: "45%",
   },
   {
     name: "React",
     icon: reactIcon,
-    xp: 3,
+    xp: "55%",
   },
   {
     name: "Svelte",
     icon: svelteIcon,
-    xp: 2,
+    xp: "35%",
   },
   {
     name: "Vite",
     icon: viteIcon,
-    xp: 3,
+    xp: "40%",
   },
   {
     name: "Git",
     icon: gitIcon,
-    xp: 3,
+    xp: "75%",
   },
   {
     name: "Gitlab",
     icon: gitlabIcon,
-    xp: 3,
+    xp: "75%",
   },
   {
     name: "Atlassian",
     icon: atlassianIcon,
-    xp: 2,
+    xp: "60%",
   },
   {
     name: "Figma",
     icon: figmaIcon,
-    xp: 2,
+    xp: "40%",
   },
 ]

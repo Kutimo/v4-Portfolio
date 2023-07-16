@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes xpBarAnimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: full; 
+  }
+}
+
+.xp-bar {
+  animation: xpBarAnimation 1s ease-out;
+}
