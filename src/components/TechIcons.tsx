@@ -6,22 +6,25 @@ export default function TechIconsWrapper() {
       {TechIcons &&
         TechIcons.map(({ name, xp, icon }, i) => {
           return (
-            <div key={i} className="group m-2 h-32 w-32 select-none p-2.5 pb-7">
+            <div
+              key={i}
+              className="h-42 w-42 group m-2 select-none p-3 hover:bg-dark-accent/50 hover:shadow-lg hover:scale-110 ease-in-out duration-200 "
+            >
               <img
                 src={icon}
                 alt={name}
-                height={110}
-                width={110}
-                className="pointer-events-none h-full drop-shadow-[0_8px_8px_rgba(255,255,255,0.08)]"
+                height={112}
+                width={112}
+                className="object-fit pointer-events-none h-28 w-28 drop-shadow-[0_10px_10px_rgba(255,255,255,0.08)]"
               />
               <p className="p-1 text-center text-lg">{name}</p>
               {/* Progress bar */}
-              <div className="hidden h-5 rounded-full bg-gray-200 group-hover:block">
+              <div className="h-5 rounded-sm bg-gray-200 group-hover:visible invisible">
                 <div
-                  className="flex h-full items-center justify-center rounded-full bg-blue-500 xp-bar"
+                  className="hidden xp-bar group-hover:flex h-full items-center justify-center bg-blue-500"
                   style={{ width: xp }}
                 >
-                  <span className=" text-black">{xp}</span>
+                  <span className="text-black font-semibold">{xp}</span>
                 </div>
               </div>
               {/* <p className="hidden group-hover:block">{xp}</p> */}

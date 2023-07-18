@@ -12,5 +12,5 @@
 }
 
 .xp-bar {
-  animation: xpBarAnimation 1s ease-out;
+  animation: xpBarAnimation 0.6s ease-in;
 }
