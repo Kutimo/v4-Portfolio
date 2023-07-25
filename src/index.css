@@ -2,15 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes xpBarAnimation {
+@keyframes gradient-animation {
   from {
-    width: 0%;
+    opacity: 0;
   }
   to {
-    width: full; 
+    opacity: 1;
   }
 }
 
-.xp-bar {
-  animation: xpBarAnimation 0.6s ease-in;
+.bg-gradient-1 {
+  background: linear-gradient(to right, #010e54, #06106d);
+  /* transition: ease-in-out 300ms; */
+}
+
+/* Gradient from light blue to dark purple */
+.bg-gradient-2 {
+  background: linear-gradient(to right, #081883, #073194);
+  /* transition: ease-in-out 400ms; */
+}
+
+/* Gradient from light blue to medium purple */
+.bg-gradient-3 {
+  background: linear-gradient(to right, #0649a4, #0560b3);
+  /* transition: ease-in 500ms; */
+}
+
+/* Gradient from light blue to lavender */
+.bg-gradient-4 {
+  background: linear-gradient(to right, #0393d4, #00d4ff);
+  /* transition: all ease-in 600ms; */
+}
+.default-bg-gradient {
+  background: white;
 }
