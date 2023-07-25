@@ -12,10 +12,16 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react-refresh", "prettier"],
+  plugins: ["react-refresh", "prettier", "react"],
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
   rules: {
     "react-refresh/only-export-components": "warn",
     "react/react-in-jsx-scope": "off",
   },
   "root": true,
+
 }
