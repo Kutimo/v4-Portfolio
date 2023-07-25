@@ -1,5 +1,5 @@
 import { TechIcons } from "../data/TechConfig"
-//? cursor and pointer events
+
 export default function TechIconsWrapper() {
   const getBgGradientClass = (xp: number, index: number) => {
     if (xp >= index) {
@@ -33,10 +33,13 @@ export default function TechIconsWrapper() {
                 alt={name}
                 height={112}
                 width={112}
-                className="object-fit pointer-events-none h-28 w-28 drop-shadow-[0_8px_8px_rgba(255,255,255,0.08)] group-hover:drop-shadow-[0_16px_16px_rgba(255,255,255,0.15)] delay-100"
+                className="object-fit pointer-events-none h-28 w-28 drop-shadow-[0_8px_8px_rgba(255,255,255,0.08)] delay-100 group-hover:drop-shadow-[0_16px_16px_rgba(255,255,255,0.15)]"
               />
               <p className="p-1 text-center text-lg">{name}</p>
-              {/* Progress bar */}
+
+              {/*
+              // * Power bar
+             */}
               <div className="invisible flex h-5 justify-center divide-x-2 divide-white rounded-sm bg-gray-200 p-0.5 group-hover:visible">
                 <span
                   className={`h-full w-1/4 delay-100 ease-in ${getBgGradientClass(
@@ -63,7 +66,6 @@ export default function TechIconsWrapper() {
                   )}`}
                 ></span>
               </div>
-              {/* <p className="hidden group-hover:block">{xp}</p> */}
             </div>
           )
         })}
