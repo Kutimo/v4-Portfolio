@@ -1,4 +1,4 @@
-import { TechIcons } from "../data/TechConfig"
+import { TechIcons } from "$data/TechConfig"
 
 export default function TechIconsWrapper() {
   const getBgGradientClass = (xp: number, index: number) => {

@@ -22,7 +22,8 @@
       "$layout/*": ["./src/components/layout/*"],
       "$home-sections/*": ["./src/pages/home/sections/*"],
       "$images/*": ["./src/assets/images/*"],
-      "$svg/*": ["./src/assets/svg/*"]
+      "$svg/*": ["./src/assets/svg/*"],
+      "$data/*": ["./src/data/*"]
     },
     /* Linting */
     "noUnusedLocals": true,
