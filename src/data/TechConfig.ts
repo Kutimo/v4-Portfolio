@@ -7,10 +7,10 @@ import nodeIcon from "$svg/tech/Nodejs_Logo.svg"
 import reactIcon from "$svg/tech/React.svg"
 import svelteIcon from "$svg/tech/Svelte_logo.svg"
 import viteIcon from "$svg/tech/Vitejs_Logo.svg"
-import gitIcon from "$svg/tech/GitHub_Logo.svg"
-import gitlabIcon from "$svg/tech/Gitlab_Logo.svg"
+import gitIcon from "$svg/tech/Git_Logo.svg"
 import atlassianIcon from "$svg/tech/Atlassian_Logo.svg"
 import figmaIcon from "$svg/tech/Figma_logo.svg"
+import rustIcon from "$svg/tech/Rust_Logo.svg"
 
 export const TechIcons: Array<{ name: string; xp: number; icon: string }> = [
   {
@@ -54,6 +54,11 @@ export const TechIcons: Array<{ name: string; xp: number; icon: string }> = [
     xp: 1,
   },
   {
+    name: "Rust",
+    icon: rustIcon,
+    xp: 1,
+  },
+  {
     name: "Vite",
     icon: viteIcon,
     xp: 2,
@@ -61,12 +66,7 @@ export const TechIcons: Array<{ name: string; xp: number; icon: string }> = [
   {
     name: "Git",
     icon: gitIcon,
-    xp: 3,
-  },
-  {
-    name: "Gitlab",
-    icon: gitlabIcon,
-    xp: 3,
+    xp: 4,
   },
   {
     name: "Atlassian",

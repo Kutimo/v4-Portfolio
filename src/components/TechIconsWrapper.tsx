@@ -26,14 +26,14 @@ export default function TechIconsWrapper() {
           return (
             <div
               key={i}
-              className="h-42 w-42 group m-2 select-none p-3 duration-700 ease-in-out hover:scale-110 hover:bg-dark-accent/50 hover:shadow-lg "
+              className="h-42 w-42 group m-2 select-none p-3 duration-700 ease-in-out hover:scale-110 hover:bg-dark-accent/50 hover:drop-shadow-lg-black "
             >
               <img
                 src={icon}
                 alt={name}
                 height={112}
                 width={112}
-                className="object-fit pointer-events-none h-28 w-28 drop-shadow-[0_8px_8px_rgba(255,255,255,0.08)] delay-100 group-hover:drop-shadow-[0_16px_16px_rgba(255,255,255,0.15)]"
+                className="object-fit pointer-events-none h-28 w-28 drop-shadow-lg-black delay-100"
               />
               <p className="p-1 text-center text-lg">{name}</p>
 
