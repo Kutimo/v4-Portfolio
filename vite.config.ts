@@ -13,6 +13,7 @@ export default defineConfig({
       "$home-sections": path.resolve(__dirname, "./src/pages/home/sections"),
       $images: path.resolve(__dirname, "./src/assets/images"),
       $svg: path.resolve(__dirname, "./src/assets/svg"),
+      $data: path.resolve(__dirname, "./src/data"),
       // Add more aliases as needed
     },
   },
