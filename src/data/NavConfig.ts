@@ -20,7 +20,7 @@ export const navLinks: Array<{ name: string; url: string; icon: string }> = [
   },
   {
     name: "Contact",
-    url: "/contact",
+    url: "/#contact",
     icon: contactIcon,
   },
 ]
