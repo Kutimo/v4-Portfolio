@@ -3,7 +3,7 @@ import Tag from "$components/common/Tag"
 
 export default function ExperienceList() {
   return (
-    <article>
+    <article className="mt-10 flex flex-col gap-3 drop-shadow-sm">
       {ExperienceConfig &&
         ExperienceConfig.map(({ title, place, date, description, tech }, i) => {
           return (
@@ -23,8 +23,6 @@ export default function ExperienceList() {
             </div>
           )
         })}
-      <h3>header</h3>
-      <p>date</p>
     </article>
   )
 }
