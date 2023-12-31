@@ -1,4 +1,4 @@
-export const socialMedia: Array<{ name: string; url: string }> = [
+export const SocialMedia: Array<{ name: string; url: string }> = [
   {
     name: "GitHub",
     url: "https://github.com/",
