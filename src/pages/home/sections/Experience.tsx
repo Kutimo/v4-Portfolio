@@ -1,17 +1,13 @@
-import TechIconsWrapper from "$components/TechIconsWrapper"
+import TechIconsWrapper from "$components/experience/TechIconsWrapper"
+import ExperienceList from "$components/experience/ExperienceList"
 
 export default function Experience() {
   return (
-    <section id="experience" className="mt-20 h-96 text-white">
-      <h2>Experience</h2>
-        
-      <div>
-        <h3>Technologies</h3>
-        <TechIconsWrapper />
-      </div>
-      <div>
-        <h3>Tools</h3>
-      </div>
+    // TODO: Fix font sizes (font is pixelated)
+    <section id="experience" className="mt-10 w-full text-white h-fit">
+      <h2 className="font-sans text-4xl font-bold p-2 bg-dark-accent w-fit text-light-shade-100 drop-shadow-lg-black mx-5 ">Experience and skills</h2>
+      <TechIconsWrapper />
+      <ExperienceList />
     </section>
   )
 }

@@ -4,7 +4,7 @@ import bracketRight from "$svg/bracket_right.svg"
 
 export default function Hero() {
   return (
-    <section className="mx-5 mt-10 flex h-screen md:mx-10">
+    <section className="mx-5 mt-10 flex h-fit md:mx-10">
       <div className="w-full">
         <h3 className="font-sans text-2xl text-white">Hello, i am</h3>
         <h1 className="my-3 w-fit bg-dark-accent px-2 pb-2.5 font-sans text-7xl font-bold text-light-shade-500 drop-shadow-lg-black ">
