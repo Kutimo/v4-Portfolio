@@ -1,4 +1,5 @@
 import { TechIcons } from "$data/TechConfig"
+import { useState } from "react"
 import Switch from "./common/Switch"
 import Tooltip from "./common/Tooltip"
 
@@ -21,10 +22,17 @@ export default function TechIconsWrapper() {
       return "bg-gradient-default"
     }
   }
+
+  const [isActive, setIsActive] = useState(false);
+
+  const handleSwitchToggle = () => {
+    setIsActive((prevState) => !prevState);
+  };
+
   return (
     <div className="flex flex-col items-end px-[4%] py-10 md:px-[1%] md:py-16 lg:px-[4%] lg:py-20">
       <Tooltip content="Show all">
-        <Switch />
+        <Switch onToggle={handleSwitchToggle} isActive={isActive} />
       </Tooltip>
       <div className="flex flex-wrap items-center justify-center gap-5 ">
         {TechIcons &&
@@ -32,7 +40,10 @@ export default function TechIconsWrapper() {
             return (
               <div
                 key={i}
-                className="h-42 w-42 mt-5 group m-2 select-none p-3 duration-700 ease-in-out hover:scale-110 hover:bg-dark-accent/50 hover:drop-shadow-lg-black "
+                className={`h-42 w-42 mt-6 group m-2 select-none p-3 duration-700 ease-in-out ${isActive
+                  ? `scale-110 bg-dark-accent/50 drop-shadow-lg-black`
+                  : ''
+                  }hover:scale-110 hover:bg-dark-accent/50 hover:drop-shadow-lg-black`}
               >
                 <img
                   src={icon}
@@ -46,7 +57,8 @@ export default function TechIconsWrapper() {
                 {/*
               // * Power bar
              */}
-                <div className="invisible flex h-5 justify-center divide-x-2 divide-white rounded-sm bg-gray-200 p-0.5 group-hover:visible">
+                <div className={`flex h-5 justify-center divide-x-2 divide-white rounded-sm bg-gray-200 p-0.5 ${isActive ? 'visible' : 'invisible'
+                  } group-hover:visible`}>
                   <span
                     className={`h-full w-1/4 delay-100 ease-in ${getBgGradientClass(
                       xp,
