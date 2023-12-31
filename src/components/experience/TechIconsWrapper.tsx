@@ -1,7 +1,7 @@
 import { TechIcons } from "$data/TechConfig"
 import { useState } from "react"
-import Switch from "./common/Switch"
-import Tooltip from "./common/Tooltip"
+import Switch from "../common/Switch"
+import Tooltip from "../common/Tooltip"
 
 export default function TechIconsWrapper() {
   const getBgGradientClass = (xp: number, index: number) => {
