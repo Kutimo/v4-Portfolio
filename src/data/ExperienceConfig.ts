@@ -1,4 +1,4 @@
-export const ExperienceList: Array<{
+export const ExperienceConfig: Array<{
   title: string
   place: string
   date: string
