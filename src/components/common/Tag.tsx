@@ -1,10 +1,10 @@
 interface tagProps {
-  text: string;
+  text: string
 }
 
 export default function Tag({ text }: tagProps) {
   return (
-    <span className="bg-light-shade-300 p-1.5 rounded-sm font-serif text-md text-black">
+    <span className="text-md rounded-sm bg-light-shade-300 p-1.5 font-serif text-black">
       {text}
     </span>
   )

@@ -1,5 +1,5 @@
-import { ExperienceConfig } from "$data/ExperienceConfig";
-import Tag from "$components/common/Tag";
+import { ExperienceConfig } from "$data/ExperienceConfig"
+import Tag from "$components/common/Tag"
 
 export default function ExperienceList() {
   return (
@@ -7,17 +7,17 @@ export default function ExperienceList() {
       {ExperienceConfig &&
         ExperienceConfig.map(({ title, place, date, description, tech }, i) => {
           return (
-            <div key={i} className="bg-main flex flex-col w-fit p-3 gap-2">
+            <div key={i} className="flex w-fit flex-col gap-2 bg-main p-3">
               <div>
-                <h3>{title} <span className="text-light-shade-500">{place}</span></h3>
-                <p className="font-sans italic text-sm">{date}</p>
+                <h3>
+                  {title} <span className="text-light-shade-500">{place}</span>
+                </h3>
+                <p className="font-sans text-sm italic">{date}</p>
               </div>
-              <ul className="gap-3 flex flex-col items-center">
+              <ul className="flex flex-col items-center gap-3">
                 <li className="w-[50ch]">{description}</li>
-                <li className="gap-1 flex">
-                  {tech && tech.map((tag, j) => (
-                    <Tag key={j} text={tag} />
-                  ))}
+                <li className="flex gap-1">
+                  {tech && tech.map((tag, j) => <Tag key={j} text={tag} />)}
                 </li>
               </ul>
             </div>

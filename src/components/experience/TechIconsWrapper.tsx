@@ -23,11 +23,11 @@ export default function TechIconsWrapper() {
     }
   }
 
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false)
 
   const handleSwitchToggle = () => {
-    setIsActive((prevState) => !prevState);
-  };
+    setIsActive((prevState) => !prevState)
+  }
 
   return (
     <div className="flex flex-col items-end px-[4%] py-10 md:px-[1%] md:py-16 lg:px-[4%] lg:py-20">
@@ -40,10 +40,9 @@ export default function TechIconsWrapper() {
             return (
               <div
                 key={i}
-                className={`h-42 w-42 mt-6 group m-2 select-none p-3 duration-700 ease-in-out ${isActive
-                  ? `scale-110 bg-dark-accent/50 drop-shadow-lg-black`
-                  : ''
-                  }hover:scale-110 hover:bg-dark-accent/50 hover:drop-shadow-lg-black`}
+                className={`h-42 w-42 group m-2 mt-6 select-none p-3 duration-700 ease-in-out ${
+                  isActive ? `scale-110 bg-dark-accent/50 drop-shadow-lg-black` : ""
+                }hover:scale-110 hover:bg-dark-accent/50 hover:drop-shadow-lg-black`}
               >
                 <img
                   src={icon}
@@ -52,13 +51,16 @@ export default function TechIconsWrapper() {
                   width={112}
                   className="object-fit pointer-events-none h-28 w-28 drop-shadow-lg-black delay-100"
                 />
-                <p className="p-1 text-center text-lg font-serif font-semibold">{name}</p>
+                <p className="p-1 text-center font-serif text-lg font-semibold">{name}</p>
 
                 {/*
               // * Power bar
              */}
-                <div className={`flex h-5 justify-center divide-x-2 divide-white rounded-sm bg-gray-200 p-0.5 ${isActive ? 'visible' : 'invisible'
-                  } group-hover:visible`}>
+                <div
+                  className={`flex h-5 justify-center divide-x-2 divide-white rounded-sm bg-gray-200 p-0.5 ${
+                    isActive ? "visible" : "invisible"
+                  } group-hover:visible`}
+                >
                   <span
                     className={`h-full w-1/4 delay-100 ease-in ${getBgGradientClass(
                       xp,

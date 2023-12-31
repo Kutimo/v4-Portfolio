@@ -25,8 +25,9 @@ export default function Navigation() {
         <img src={logo} alt="logo" height={75} width={175} className="h-full" />
       </Link>
       <nav
-        className={` z-10 flex flex-col transition-all duration-500 ease-in-out md:flex-row md:justify-end ${showMenu ? "bg-main" : "bg-none"
-          } ${showMenu ? "z-100 fixed left-0 top-0 h-full w-full" : ""}`}
+        className={` z-10 flex flex-col transition-all duration-500 ease-in-out md:flex-row md:justify-end ${
+          showMenu ? "bg-main" : "bg-none"
+        } ${showMenu ? "z-100 fixed left-0 top-0 h-full w-full" : ""}`}
       >
         <img
           src={showMenu ? closeIcon : hamMenuIcon}
@@ -37,8 +38,9 @@ export default function Navigation() {
           onClick={toggleMenu}
         />
         <ul
-          className={`mt-16 flex items-center divide-y-2 divide-light-shade-100 text-center md:mt-0 md:flex md:flex-row md:divide-none ${showMenu ? "flex-col" : "hidden"
-            } `}
+          className={`mt-16 flex items-center divide-y-2 divide-light-shade-100 text-center md:mt-0 md:flex md:flex-row md:divide-none ${
+            showMenu ? "flex-col" : "hidden"
+          } `}
         >
           {navLinks &&
             navLinks.map(({ name, url, icon }, i) => (
