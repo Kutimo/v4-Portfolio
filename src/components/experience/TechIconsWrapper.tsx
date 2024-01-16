@@ -30,7 +30,7 @@ export default function TechIconsWrapper() {
   }
 
   return (
-    <div className="flex flex-col items-end justify-center w-2/3 ">
+    <div className="flex flex-col items-end justify-center md:w-2/3 sm:w-full ">
       <Tooltip content="Show all">
         <Switch onToggle={handleSwitchToggle} isActive={isActive} />
       </Tooltip>
