@@ -34,14 +34,12 @@ export default function TechIconsWrapper() {
       <Tooltip content="Show all">
         <Switch onToggle={handleSwitchToggle} isActive={isActive} />
       </Tooltip>
-      <div className="flex flex-wrap items-center justify-center gap-5 ">
+      <div className="flex flex-wrap items-center justify-center gap-5">
         {TechIcons &&
           TechIcons.map(({ name, xp, icon }, i) => {
             return (
               <div
                 key={i}
-                className={`h-42 w-42 group m-2 mt-6 select-none p-3 duration-700 ease-in-out ${isActive ? `scale-110 bg-dark-accent/50 drop-shadow-lg-black` : ""
-                  }hover:scale-110 hover:bg-dark-accent/50 hover:drop-shadow-lg-black`}
                 className={`h-42 w-42 group m-2 mt-6 select-none p-3 duration-700 ease-in-out ${isActive ? `scale-110 bg-dark-accent/50 drop-shadow-lg-black` : ""
                   }hover:scale-110 hover:bg-dark-accent/50 hover:drop-shadow-lg-black`}
               >
