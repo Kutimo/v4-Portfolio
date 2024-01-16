@@ -16,7 +16,7 @@ export default function ExperienceList() {
               </div>
               <ul className="flex flex-col items-center gap-2">
                 <li className="md:w-[60ch] sm:w-[35ch]">{description}</li>
-                <li className="flex gap-1.5">
+                <li className="flex gap-1.5 flex-wrap">
                   {tech && tech.map((tag, j) => <Tag key={j} text={tag} />)}
                 </li>
               </ul>

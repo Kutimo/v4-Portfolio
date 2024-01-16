@@ -11,7 +11,7 @@ export default function Experience() {
       <h2 className="mx-5 w-fit bg-dark-accent p-2 font-sans text-5xl font-bold text-light-shade-100 drop-shadow-lg-black ">
         Skills and Experience
       </h2>
-      <div className="mt-8 flex md:flex-row sm:flex-col gap-3 border-2 border-white/50 p-3 rounded-md bg-dark-accent/20">
+      <div className="mt-8 flex md:flex-row flex-col gap-3 border-2 border-white/50 p-3 rounded-md bg-dark-accent/20">
         <TechIconsWrapper />
         <ExperienceList />
       </div>
