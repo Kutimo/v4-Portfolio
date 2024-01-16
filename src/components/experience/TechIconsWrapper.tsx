@@ -30,7 +30,7 @@ export default function TechIconsWrapper() {
   }
 
   return (
-    <div className="flex flex-col items-end ">
+    <div className="flex flex-col items-end justify-center md:w-2/3 sm:w-full ">
       <Tooltip content="Show all">
         <Switch onToggle={handleSwitchToggle} isActive={isActive} />
       </Tooltip>
@@ -40,6 +40,8 @@ export default function TechIconsWrapper() {
             return (
               <div
                 key={i}
+                className={`h-42 w-42 group m-2 mt-6 select-none p-3 duration-700 ease-in-out ${isActive ? `scale-110 bg-dark-accent/50 drop-shadow-lg-black` : ""
+                  }hover:scale-110 hover:bg-dark-accent/50 hover:drop-shadow-lg-black`}
                 className={`h-42 w-42 group m-2 mt-6 select-none p-3 duration-700 ease-in-out ${isActive ? `scale-110 bg-dark-accent/50 drop-shadow-lg-black` : ""
                   }hover:scale-110 hover:bg-dark-accent/50 hover:drop-shadow-lg-black`}
               >
