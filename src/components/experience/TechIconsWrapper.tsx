@@ -42,6 +42,8 @@ export default function TechIconsWrapper() {
                 key={i}
                 className={`h-42 w-42 group m-2 mt-6 select-none p-3 duration-700 ease-in-out ${isActive ? `scale-110 bg-dark-accent/50 drop-shadow-lg-black` : ""
                   }hover:scale-110 hover:bg-dark-accent/50 hover:drop-shadow-lg-black`}
+                className={`h-42 w-42 group m-2 mt-6 select-none p-3 duration-700 ease-in-out ${isActive ? `scale-110 bg-dark-accent/50 drop-shadow-lg-black` : ""
+                  }hover:scale-110 hover:bg-dark-accent/50 hover:drop-shadow-lg-black`}
               >
                 <img
                   src={icon}
@@ -56,7 +58,7 @@ export default function TechIconsWrapper() {
               // * Power bar
              */}
                 <div
-                  className={`flex h-5 justify-center divide-x-2 divide-white rounded-sm bg-gray-200 p-0.5 ${isActive ? "visible" : "invisible"
+                  className={`flex h-5 justify-center divide-x-2 divide-gray-500 border-2 border-gray-500 rounded-sm bg-gray-200 p-0.5 ${isActive ? "visible" : "invisible"
                     } group-hover:visible`}
                 >
                   <span
