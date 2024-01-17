@@ -9,8 +9,8 @@ export default function ExperienceList() {
           return (
             <div key={i} className="flex flex-col bg-main p-3 gap-1 drop-shadow-sm rounded-sm">
               <div>
-                <h3 className="text-2xl">
-                  {title} <span className="text-light-shade-400">{place}</span>
+                <h3 className="text-xl md:text-2xl">
+                  {title} <span className="text-light-shade-400 text-lg md:text-xl">{place}</span>
                 </h3>
                 <p className="font-sans text-sm italic mt-1">{date}</p>
               </div>
