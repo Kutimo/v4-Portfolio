@@ -6,21 +6,21 @@ export default function Hero() {
   return (
     <section className="mx-5 mt-10 flex h-fit md:mx-10">
       <div className="w-full">
-        <h3 className="font-sans text-xl md:text-2xl text-white">Hello, i am</h3>
-        <h1 className="my-3 w-fit bg-dark-accent px-2 pb-2.5 font-sans text-4xl md:text-7xl font-bold text-light-shade-500 drop-shadow-lg-black ">
+        <h3 className="font-sans text-xl text-white md:text-2xl">Hello, i am</h3>
+        <h1 className="my-3 w-fit bg-dark-accent px-2 pb-2.5 font-sans text-4xl font-bold text-light-shade-500 drop-shadow-lg-black md:text-7xl ">
           Marius Kristiansen,
         </h1>
-        <h2 className="my-4 w-fit bg-dark-accent px-2.5 pb-4 pt-1 text-3xl md:text-6xl font-bold text-light-shade-300 drop-shadow-lg-black">
+        <h2 className="my-4 w-fit bg-dark-accent px-2.5 pb-4 pt-1 text-3xl font-bold text-light-shade-300 drop-shadow-lg-black md:text-6xl">
           I develop web things
         </h2>
         <div className="flex w-fit flex-col items-start p-2 text-light-shade-200">
-          <p className="mt-10 w-3/4 font-serif text-lg md:text-xl md:w-96">
+          <p className="mt-10 w-3/4 font-serif text-lg md:w-96 md:text-xl">
             As a developer, I strive to pay close attention to even the smallest details
             that can make a big difference for your project and brand.
           </p>
           <a
             href="#projects"
-            className="border-light mt-10 border-2 border-light-shade-400 p-3 text-lg md:text-xl font-medium text-light-shade-100 shadow-md transition-all duration-300 ease-in hover:rounded-none hover:border-light-shade-200 hover:bg-light-shade-400 hover:text-black"
+            className="border-light mt-10 border-2 border-light-shade-400 p-3 text-lg font-medium text-light-shade-100 shadow-md transition-all duration-300 ease-in hover:rounded-none hover:border-light-shade-200 hover:bg-light-shade-400 hover:text-black md:text-xl"
           >
             View portfolio
           </a>

@@ -1,5 +1,5 @@
 export interface IconType {
-  width: number;
-  height: number;
-  isVisible: boolean;
+  width: number
+  height: number
+  isVisible: boolean
 }
