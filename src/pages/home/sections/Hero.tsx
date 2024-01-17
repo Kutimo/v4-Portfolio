@@ -20,7 +20,7 @@ export default function Hero() {
           </p>
           <a
             href="#projects"
-            className="border-light mt-10 border-2 border-light-shade-400 p-3 text-xl font-medium text-light-shade-100 shadow-md transition-all duration-300 ease-in hover:rounded-none hover:border-light-shade-200 hover:bg-light-shade-400 hover:text-black"
+            className="border-light mt-10 border-2 border-light-shade-400 p-3 text-lg md:text-xl font-medium text-light-shade-100 shadow-md transition-all duration-300 ease-in hover:rounded-none hover:border-light-shade-200 hover:bg-light-shade-400 hover:text-black"
           >
             View portfolio
           </a>

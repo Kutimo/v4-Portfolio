@@ -62,7 +62,7 @@ export default function Navigation() {
             className={` w-full ${showMenu ? "" : "hidden"}}`}>
             <a
               href={"/#about"}
-              className="font-2 relative flex justify-center p-5 font-sans font-semibold text-white hover:text-black text-xl decoration-2 underline-offset-4 hover:underline md:m-2 md:p-2 gap-3 items-center"
+              className="font-2 relative flex justify-center p-5 font-sans font-semibold md:font-normal text-white hover:text-black text-xl md:text-base decoration-2 underline-offset-4 hover:underline md:m-2 md:p-2 gap-3 items-center"
               onClick={handleLinkClick}
             >
               About
