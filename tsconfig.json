@@ -20,7 +20,8 @@
       "$pages/*": ["./src/pages/*"],
       "$components/*": ["./src/components/*"],
       "$layout/*": ["./src/components/layout/*"],
-      "$home-sections/*": ["./src/pages/home/sections/*"],
+      "$homeSections/*": ["./src/pages/home/sections/*"],
+      "$types/*": ["./src/types/*"],
       "$images/*": ["./src/assets/images/*"],
       "$svg/*": ["./src/assets/svg/*"],
       "$data/*": ["./src/data/*"]

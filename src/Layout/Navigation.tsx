@@ -1,18 +1,34 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { navLinks } from "../data/NavConfig"
 import logo from "$svg/logo.svg"
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoIosCloseCircleOutline } from "react-icons/io";
+import { AboutIcon, ExperienceIcon, ProjectIcon, ContactIcon } from '$svg/navIcons/index';
 
 export default function Navigation() {
   const [showMenu, setShowMenu] = useState(false)
+
+  const [isAbove768px, setIsAbove768px] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsAbove768px(window.innerWidth < 768);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [])
 
   function toggleMenu() {
     setShowMenu(!showMenu)
   }
 
-  // Since there is no page redirect with a link or route, there is a check to see if the menu is open when a <a> tag is clicked in nav.
   function handleLinkClick() {
     if (showMenu) {
       setShowMenu(false)
@@ -45,6 +61,38 @@ export default function Navigation() {
           className={`mt-16 flex items-center divide-y-2 divide-white/50 text-center md:mt-0 md:flex md:flex-row md:divide-none ${showMenu ? "flex-col" : "hidden"
             } `}
         >
+          <li
+            className={` w-full ${showMenu ? "" : "hidden"}}`}>
+            <a
+              href={"/#about"}
+              className="font-2 relative flex justify-center p-5 font-sans font-semibold text-white hover:text-black text-xl decoration-2 underline-offset-4 hover:underline md:m-2 md:p-2"
+              onClick={handleLinkClick}
+            >
+              About
+              <AboutIcon
+                height={25}
+                width={25}
+                isVisible={isAbove768px}
+
+              />
+            </a>
+          </li>
+          {/*  
+          {
+            name: "Experience",
+          url: "/#experience",
+          icon: experienceIcon,
+  },
+          {
+            name: "Projects",
+          url: "/#projects",
+          icon: projectIcon,
+  },
+          {
+            name: "Contact",
+          url: "/#contact",
+          icon: contactIcon,
+  }, */}
           {navLinks &&
             navLinks.map(({ name, url, icon }, i) => (
               <li key={i} className={` w-full ${showMenu ? "" : "hidden"}}`}>

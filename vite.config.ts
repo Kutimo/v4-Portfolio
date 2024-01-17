@@ -10,11 +10,11 @@ export default defineConfig({
       $pages: path.resolve(__dirname, "./src/pages"),
       $components: path.resolve(__dirname, "./src/components"),
       $layout: path.resolve(__dirname, "./src/components/layout"),
-      "$home-sections": path.resolve(__dirname, "./src/pages/home/sections"),
+      $homeSections: path.resolve(__dirname, "./src/pages/home/sections"),
+      $types: path.resolve(__dirname, "./src/types"),
       $images: path.resolve(__dirname, "./src/assets/images"),
       $svg: path.resolve(__dirname, "./src/assets/svg"),
       $data: path.resolve(__dirname, "./src/data"),
-      // Add more aliases as needed
     },
   },
 })
