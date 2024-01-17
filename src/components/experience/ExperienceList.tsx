@@ -3,20 +3,24 @@ import Tag from "$components/common/Tag"
 
 export default function ExperienceList() {
   return (
-    <article className="flex flex-col sm:items-center md:items-start gap-4 p-3 drop-shadow-sm">
+    <article className="flex flex-col gap-4 p-3 drop-shadow-sm sm:items-center md:items-start">
       {ExperienceConfig &&
         ExperienceConfig.map(({ title, place, date, description, tech }, i) => {
           return (
-            <div key={i} className="flex flex-col bg-main p-3 gap-1 drop-shadow-sm rounded-sm">
+            <div
+              key={i}
+              className="flex flex-col gap-1 rounded-sm bg-main p-3 drop-shadow-sm"
+            >
               <div>
-                <h3 className="text-2xl">
-                  {title} <span className="text-light-shade-400">{place}</span>
+                <h3 className="text-xl md:text-2xl">
+                  {title}{" "}
+                  <span className="text-lg text-blue-600 md:text-xl">{place}</span>
                 </h3>
-                <p className="font-sans text-sm italic mt-1">{date}</p>
+                <p className="mt-1 font-sans text-sm italic">{date}</p>
               </div>
               <ul className="flex flex-col items-center gap-2">
-                <li className="md:w-[60ch] sm:w-[35ch]">{description}</li>
-                <li className="flex gap-1.5 flex-wrap">
+                <li className="text-gray-950 sm:w-[35ch] md:w-[60ch]">{description}</li>
+                <li className="flex flex-wrap gap-1.5">
                   {tech && tech.map((tag, j) => <Tag key={j} text={tag} />)}
                 </li>
               </ul>
