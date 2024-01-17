@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { navLinks } from "../data/NavConfig"
 import logo from "$svg/logo.svg"
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoIosCloseCircleOutline } from "react-icons/io";
-import { AboutIcon, ExperienceIcon, ProjectIcon, ContactIcon } from '$svg/navIcons/index';
+import { AboutIcon, ExperienceIcon, ProjectIcon, ContactIcon } from '$svg/navIcons/Index';
 
 export default function Navigation() {
   const [showMenu, setShowMenu] = useState(false)
-
   const [isAbove768px, setIsAbove768px] = useState(false);
 
   useEffect(() => {
@@ -17,7 +15,6 @@ export default function Navigation() {
     };
 
     handleResize();
-
     window.addEventListener('resize', handleResize);
 
     return () => {
@@ -65,53 +62,41 @@ export default function Navigation() {
             className={` w-full ${showMenu ? "" : "hidden"}}`}>
             <a
               href={"/#about"}
-              className="font-2 relative flex justify-center p-5 font-sans font-semibold text-white hover:text-black text-xl decoration-2 underline-offset-4 hover:underline md:m-2 md:p-2"
+              className="font-2 relative flex justify-center p-5 font-sans font-semibold text-white hover:text-black text-xl decoration-2 underline-offset-4 hover:underline md:m-2 md:p-2 gap-3 items-center"
               onClick={handleLinkClick}
             >
               About
               <AboutIcon
-                height={25}
-                width={25}
-                isVisible={isAbove768px}
+                height={25} width={25} isVisible={isAbove768px}
 
               />
             </a>
           </li>
-          {/*  
-          {
-            name: "Experience",
-          url: "/#experience",
-          icon: experienceIcon,
-  },
-          {
-            name: "Projects",
-          url: "/#projects",
-          icon: projectIcon,
-  },
-          {
-            name: "Contact",
-          url: "/#contact",
-          icon: contactIcon,
-  }, */}
-          {navLinks &&
-            navLinks.map(({ name, url, icon }, i) => (
-              <li key={i} className={` w-full ${showMenu ? "" : "hidden"}}`}>
-                <a
-                  href={url}
-                  className="font-2 relative flex justify-center p-5 font-sans font-semibold text-white hover:text-black text-xl decoration-2 underline-offset-4 hover:underline md:m-2 md:p-2"
-                  onClick={handleLinkClick}
-                >
-                  {name}
-                  <img
-                    src={icon}
-                    alt={icon}
-                    height={24}
-                    width={24}
-                    className="absolute right-32 md:hidden hover:cursor-pointer "
-                  />
-                </a>
-              </li>
-            ))}
+          <li className={` w-full ${showMenu ? "" : "hidden"}}`}>
+            <a href="/#experience" className="font-2 relative flex justify-center p-5 font-sans font-semibold text-white hover:text-black text-xl decoration-2 underline-offset-4 hover:underline md:m-2 md:p-2 gap-3 items-center"
+              onClick={handleLinkClick}>
+              Experience
+              <ExperienceIcon height={25} width={25} isVisible={isAbove768px} />
+            </a>
+          </li>
+          <li className={` w-full ${showMenu ? "" : "hidden"}}`}>
+            <a href="/#experience" className="font-2 relative flex justify-center p-5 font-sans font-semibold text-white hover:text-black text-xl decoration-2 underline-offset-4 hover:underline md:m-2 md:p-2 gap-3 items-center"
+              onClick={handleLinkClick}>
+              Projects
+              <ProjectIcon height={25} width={25} isVisible={isAbove768px} />
+            </a>
+          </li>
+          <li className={`w-full ${showMenu ? "" : "hidden"}}`}>
+            <a
+              href={"/#contact"}
+              className="font-2 relative flex justify-center p-5 font-sans font-semibold text-white hover:text-black text-xl decoration-2 underline-offset-4 hover:underline md:m-2 md:p-2 gap-3 items-center"
+              onClick={handleLinkClick}
+            >
+              contact
+              <ContactIcon height={23} width={23} isVisible={isAbove768px}
+              />
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
