@@ -2,8 +2,8 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import { navLinks } from "../data/NavConfig"
 import logo from "$svg/logo.svg"
-import hamMenuIcon from "$svg/hamMenu.svg"
-import closeIcon from "$svg/CloseIcon.svg"
+import { RiMenu3Fill } from "react-icons/ri";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 export default function Navigation() {
   const [showMenu, setShowMenu] = useState(false)
@@ -25,29 +25,32 @@ export default function Navigation() {
         <img src={logo} alt="logo" height={75} width={175} className="h-full" />
       </Link>
       <nav
-        className={` z-10 flex flex-col transition-all duration-500 ease-in-out md:flex-row md:justify-end ${
-          showMenu ? "bg-main" : "bg-none"
-        } ${showMenu ? "z-100 fixed left-0 top-0 h-full w-full" : ""}`}
+        className={` z-10 flex flex-col transition-all duration-500 ease-in-out md:flex-row md:justify-end ${showMenu ? "bg-main" : "bg-none"
+          } ${showMenu ? "z-100 fixed left-0 top-0 h-full w-full" : ""}`}
       >
-        <img
-          src={showMenu ? closeIcon : hamMenuIcon}
-          height={48}
-          width={48}
-          alt={showMenu ? "Close menu" : "MenuIcon"}
-          className="absolute right-2 top-2 m-3.5 md:hidden "
-          onClick={toggleMenu}
-        />
+        {showMenu ? (
+          <IoIosCloseCircleOutline
+            size={48}
+            className="absolute right-2 top-2 m-3.5 md:hidden hover:cursor-pointer hover:text-white "
+            onClick={toggleMenu}
+          />
+        ) : (
+          <RiMenu3Fill
+            size={48}
+            className="absolute right-2 top-2 m-3 md:hidden hover:cursor-pointer hover:text-white "
+            onClick={toggleMenu}
+          />
+        )}
         <ul
-          className={`mt-16 flex items-center divide-y-2 divide-light-shade-100 text-center md:mt-0 md:flex md:flex-row md:divide-none ${
-            showMenu ? "flex-col" : "hidden"
-          } `}
+          className={`mt-16 flex items-center divide-y-2 divide-white/50 text-center md:mt-0 md:flex md:flex-row md:divide-none ${showMenu ? "flex-col" : "hidden"
+            } `}
         >
           {navLinks &&
             navLinks.map(({ name, url, icon }, i) => (
               <li key={i} className={` w-full ${showMenu ? "" : "hidden"}}`}>
                 <a
                   href={url}
-                  className="font-2 relative flex justify-center p-5 font-sans text-black decoration-2 underline-offset-4 hover:underline md:m-2 md:p-2 md:text-white"
+                  className="font-2 relative flex justify-center p-5 font-sans font-semibold text-white hover:text-black text-xl decoration-2 underline-offset-4 hover:underline md:m-2 md:p-2"
                   onClick={handleLinkClick}
                 >
                   {name}
@@ -56,7 +59,7 @@ export default function Navigation() {
                     alt={icon}
                     height={24}
                     width={24}
-                    className="absolute right-32 md:hidden"
+                    className="absolute right-32 md:hidden hover:cursor-pointer "
                   />
                 </a>
               </li>
