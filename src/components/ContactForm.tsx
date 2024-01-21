@@ -62,7 +62,7 @@ export const ContactForm = () => {
       <label>Message</label>
       <textarea
         name="message"
-        className="rounded-md bg-white/95 p-1 text-black"
+        className="rounded-md bg-white/95 p-1 text-black resize-none"
         required
       />
       <button

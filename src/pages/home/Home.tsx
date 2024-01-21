@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <main className="min-h-screen w-full bg-dark-shade px-[4%] py-10 md:px-[1%] md:py-16 lg:px-[4%] lg:py-20">
+      <main className="min-h-screen w-full bg-dark-shade px-[4%] py-10 md:px-[1%] md:py-16 lg:px-[4%] lg:py-20 select-none">
         <Hero />
         <About />
         <Experience />

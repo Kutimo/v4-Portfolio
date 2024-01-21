@@ -9,7 +9,7 @@ export default function Contact() {
       </h3>
       <div className="flex items-center justify-evenly">
         <ContactForm />
-        <img src={contact_illustration} alt="contact illustration" height={375} width={375} className="mt-40" />
+        <img src={contact_illustration} alt="contact illustration" height={375} width={375} className="mt-40 pointer-events-none" />
       </div>
     </section>
   )
