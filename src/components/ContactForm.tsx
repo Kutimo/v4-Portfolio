@@ -1,6 +1,6 @@
 import { useRef } from "react"
 import emailjs from "@emailjs/browser"
-
+import toast from "react-hot-toast"
 interface EmailJSResponse {
   text: string
 }
@@ -26,11 +26,13 @@ export const ContactForm = () => {
         .then(
           (result: EmailJSResponse) => {
             console.log(result.text)
+            toast.success("Email sent successfully!")
             if (form.current) {
               form.current.reset()
             }
           },
           (error: EmailJSError) => {
+            toast.error("Email failed to send!")
             console.log(error.text)
           },
         )
@@ -41,7 +43,7 @@ export const ContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="mx-4 mt-10 flex flex-col gap-3 rounded-md border-2 border-white/50 bg-dark-accent/20 p-3 font-sans text-white drop-shadow-md md:mx-2 md:w-1/4"
+      className="mx-4 mt-10 flex flex-col gap-3 rounded-md border-2 border-white/50 bg-dark-accent/20 p-3 font-sans text-white drop-shadow-md md:mx-2 md:w-1/3"
     >
       <label>Name</label>
       <input
