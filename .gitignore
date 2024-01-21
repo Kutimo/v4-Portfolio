@@ -12,7 +12,8 @@ dist
 dist-ssr
 *.local
 Todo.md
-
+.env
+*.env
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -23,3 +24,4 @@ Todo.md
 *.njsproj
 *.sln
 *.sw?
+

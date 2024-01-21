@@ -96,7 +96,7 @@ export default function Navigation() {
               className="font-2 relative flex items-center justify-center gap-3 p-5 font-sans text-xl font-semibold text-white decoration-2 underline-offset-4 hover:text-black hover:underline active:text-light-shade-500 md:m-2 md:p-2 md:text-base md:font-normal"
               onClick={handleLinkClick}
             >
-              contact
+              Contact
               <ContactIcon height={23} width={23} isVisible={isAbove768px} />
             </a>
           </li>
