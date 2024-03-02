@@ -10,7 +10,7 @@ export default function Contact() {
 
       <div className="mt-8 flex flex-col flex-wrap items-center gap-3 rounded-md border-2 border-white/50 bg-dark-accent/20 p-4">
         <p className="w-[55ch] p-2 text-center text-lg text-white md:text-xl">
-          If you'd like to get in touch, whether it's for potential collaboration, project
+          If you&apos;d like to get in touch, whether it&apos;s for potential collaboration, project
           inquiries, or just a friendly conversation, feel free to reach out using the
           contact form below. I appreciate your interest and will respond promptly.
         </p>
