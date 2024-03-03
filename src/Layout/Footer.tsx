@@ -6,7 +6,7 @@ export default function Footer() {
   const year = today.getFullYear()
 
   return (
-    <footer className="flex justify-evenly bg-black p-5">
+    <footer className="flex flex-col md:flex-row justify-evenly items-center bg-black p-5">
       <div className="flex flex-col font-serif">
         <span className="text-center text-white">Designed and Developed by </span>
         <span className="text-center text-white">Marius Kristiansen @ {year}</span>
