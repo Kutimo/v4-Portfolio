@@ -43,26 +43,26 @@ export const ContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="mx-4 mt-10 flex w-2/3 flex-col gap-3 rounded-md border-2 border-white/60 bg-dark-accent/60 p-3 font-sans text-white drop-shadow-lg-black md:mx-2 md:w-1/4"
+      className="mx-4 mt-10 flex w-[310px] flex-col gap-3 rounded-md border-2 border-white/60 bg-dark-accent/60 p-3 font-sans text-white drop-shadow-lg-black md:mx-2 "
     >
       <label className="text-lg">Name</label>
       <input
         type="text"
         name="user_name"
-        className="rounded-md bg-white/95 p-1 text-black"
+        className="rounded-md text-lg bg-white/95 p-[10px] text-black"
         required
       />
       <label className="text-lg">Email</label>
       <input
         type="email"
         name="user_email"
-        className="rounded-md bg-white/95 p-1 text-black"
+        className="rounded-md text-lg bg-white/95 p-[10px] text-black"
         required
       />
       <label className="text-lg">Message</label>
       <textarea
         name="message"
-        className="resize-none rounded-md bg-white/95 p-1 text-black"
+        className="resize-none text-lg rounded-md bg-white/95 p-[10px] text-black"
         required
       />
       <button
