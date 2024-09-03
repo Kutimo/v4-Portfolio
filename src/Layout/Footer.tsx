@@ -9,11 +9,11 @@ export default function Footer() {
     <footer className="flex flex-col md:flex-row justify-evenly items-center bg-black p-5">
       <div className="flex flex-col font-serif">
         <span className="text-center text-white">Designed and Developed by </span>
-        <span className="text-center text-white">Marius Kristiansen @ {year}</span>
+        <span className="text-center text-white">Oliver Kristiansen @ {year}</span>
       </div>
       <div className="flex gap-10 ">
         <a
-          href="https://www.linkedin.com/in/marius-kristiansen-280b3b128/"
+          href="https://www.linkedin.com/in/oliver-kristiansen-280b3b128/"
           target="_blank"
           className="text-white duration-300 hover:text-light-shade-200 "
           rel="noreferrer"
