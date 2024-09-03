@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="w-full">
         <h3 className="font-sans text-xl text-white md:text-2xl">Hello, i am</h3>
         <h1 className="my-3 w-fit bg-dark-accent px-2 pb-2.5 font-sans text-4xl font-bold text-light-shade-500 drop-shadow-lg-black md:text-7xl ">
-          Marius Kristiansen,
+          Oliver Kristiansen,
         </h1>
         <h2 className="my-4 w-fit bg-dark-accent px-2.5 pb-4 pt-1 text-3xl font-bold text-light-shade-300 drop-shadow-lg-black md:text-6xl">
           I develop web things
