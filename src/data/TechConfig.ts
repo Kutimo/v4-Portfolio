@@ -11,6 +11,7 @@ import gitIcon from "$svg/tech/Git_Logo.svg"
 import atlassianIcon from "$svg/tech/Atlassian_Logo.svg"
 import figmaIcon from "$svg/tech/Figma_logo.svg"
 import rustIcon from "$svg/tech/Rust_Logo.svg"
+import PythonIcon from "$svg/tech/Python_Logo.svg"
 
 export const TechIcons: Array<{ name: string; xp: number; icon: string }> = [
   {
@@ -57,6 +58,11 @@ export const TechIcons: Array<{ name: string; xp: number; icon: string }> = [
     name: "Rust",
     icon: rustIcon,
     xp: 1,
+  },
+  {
+    name: "Python",
+    icon: PythonIcon,
+    xp: 2,
   },
   {
     name: "Vite",
