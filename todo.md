@@ -7,5 +7,5 @@
 #sticky navbar
 #sort skills in tech icons
 #images size
-#fix fonts for all headeers and text
-#add text for toogleswitch
+#fix fonts for all headers and text
+#add text for toggle switch
