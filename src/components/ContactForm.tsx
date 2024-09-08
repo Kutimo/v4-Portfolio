@@ -49,20 +49,20 @@ export const ContactForm = () => {
       <input
         type="text"
         name="user_name"
-        className="rounded-md text-lg bg-white/95 p-[10px] text-black"
+        className="rounded-md bg-white/95 p-[10px] text-lg text-black"
         required
       />
       <label className="text-lg">Email</label>
       <input
         type="email"
         name="user_email"
-        className="rounded-md text-lg bg-white/95 p-[10px] text-black"
+        className="rounded-md bg-white/95 p-[10px] text-lg text-black"
         required
       />
       <label className="text-lg">Message</label>
       <textarea
         name="message"
-        className="resize-none text-lg rounded-md bg-white/95 p-[10px] text-black"
+        className="resize-none rounded-md bg-white/95 p-[10px] text-lg text-black"
         required
       />
       <button

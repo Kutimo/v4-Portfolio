@@ -1,4 +1,4 @@
-import { ProjectConfig } from "$data/ProjectConfig";
+import { ProjectConfig } from "$data/ProjectConfig"
 
 export default function ProjectWrapper() {
   return (
@@ -7,17 +7,17 @@ export default function ProjectWrapper() {
         ProjectConfig.map((project) => (
           <div
             key={project.title}
-            className="w-[375px] h-[275px] relative group drop-shadow-lg-black rounded-md border-2 border-white/50"
+            className="group relative h-[275px] w-[375px] rounded-md border-2 border-white/50 drop-shadow-lg-black"
           >
             <img
               src={project.img}
               alt={project.title}
               width={375}
               height={275}
-              className="pointer-events-none w-full h-full object-fill aspect-video transition-opacity duration-300 group-hover:opacity-0"
+              className="pointer-events-none aspect-video h-full w-full object-fill transition-opacity duration-300 group-hover:opacity-0"
             />
-            <div className="absolute inset-0 bg-dark-accent transition-opacity duration-300 opacity-0 group-hover:opacity-100 text-white p-3 flex flex-col gap-3 items-center justify-center">
-              <h4 className="font-sans font-bold text-xl">{project.title}</h4>
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-dark-accent p-3 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <h4 className="font-sans text-xl font-bold">{project.title}</h4>
               <p className="p-1 text-center">{project.description}</p>
               <a
                 href={project.url}
@@ -26,11 +26,11 @@ export default function ProjectWrapper() {
                 Website
               </a>
             </div>
-            <p className="absolute -bottom-5 right-1/2 bg-dark-accent p-3 font-serif font-semibold text-white rounded-md">
+            <p className="absolute -bottom-5 right-1/2 rounded-md bg-dark-accent p-3 font-serif font-semibold text-white">
               {project.date}
             </p>
           </div>
         ))}
     </>
-  );
+  )
 }

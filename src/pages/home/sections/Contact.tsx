@@ -9,10 +9,11 @@ export default function Contact() {
       </h3>
 
       <div className="mt-8 flex flex-col flex-wrap items-center gap-3 rounded-md border-2 border-white/50 bg-dark-accent/20 p-8">
-        <p className="md:w-[55ch] p-2 text-center text-lg text-white md:text-xl">
-          If you&apos;d like to get in touch, whether it&apos;s for potential collaboration, project
-          inquiries, or just a friendly conversation, feel free to reach out using the
-          contact form below. I appreciate your interest and will respond promptly.
+        <p className="p-2 text-center text-lg text-white md:w-[55ch] md:text-xl">
+          If you&apos;d like to get in touch, whether it&apos;s for potential
+          collaboration, project inquiries, or just a friendly conversation, feel free to
+          reach out using the contact form below. I appreciate your interest and will
+          respond promptly.
         </p>
         <div className="flex w-full flex-wrap items-center justify-evenly">
           <ContactForm />
