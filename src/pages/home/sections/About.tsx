@@ -5,7 +5,7 @@ export default function About() {
 
     <section id="experience" className="mt-10 flex h-fit w-full flex-col text-white">
       <h3 className="mx-5 w-fit bg-dark-accent p-3 font-sans text-3xl font-bold text-light-shade-100 drop-shadow-lg-black md:text-5xl">
-        About
+        About me
       </h3>
       <div className="mt-8 flex gap-3 rounded-md border-2 border-white/50 bg-dark-accent/20 p-5 items-center justify-evenly flex-wrap" >
 
