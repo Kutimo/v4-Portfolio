@@ -12,7 +12,7 @@ export default function About() {
         <div className="flex flex-col bg-main p-5 drop-shadow-sm">
           <h4 className="text-2xl font-bold text-white">I'm a full-stack developer from Norway</h4>
           <p className="mt-5 max-w-[55ch] text-xl text-gray-950 ">
-            I’ve been developing various projects in a variety of languages such as Python, JavaScript and React for many years, but over the past 3 years I’ve discovered my passion for website development. In this time, I have built up my skill set and developed websites for a variety of individuals and businesses.</p>
+            I&apos;ve been developing various projects in a variety of languages such as Python, JavaScript and React for many years, but over the past 3 years I’ve discovered my passion for website development. In this time, I have built up my skill set and developed websites for a variety of individuals and businesses.</p>
         </div>
         <img
           src={programmer_illustration}
