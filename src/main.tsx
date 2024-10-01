@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import "./index.css"
 import Home from "./pages/home/Home"
 import { Toaster } from "react-hot-toast"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const router = createBrowserRouter([
   {
@@ -24,5 +25,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <Toaster />
     <RouterProvider router={router} />
+    <SpeedInsights />
   </React.StrictMode>,
 )

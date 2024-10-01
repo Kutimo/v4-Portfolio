@@ -35,3 +35,5 @@
 # Add bg color for mobile devices
 
 # fix size for mobile projects
+
+# fix nav links (not working properly)
