@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import "./index.css"
 import Home from "./pages/home/Home"
 import { Toaster } from "react-hot-toast"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const router = createBrowserRouter([
   {
