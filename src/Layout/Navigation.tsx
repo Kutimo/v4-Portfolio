@@ -38,9 +38,8 @@ export default function Navigation() {
         <img src={logo} alt="logo" height={75} width={175} className="h-full" />
       </Link>
       <nav
-        className={` z-10 flex flex-col transition-all duration-500 ease-in-out md:flex-row md:justify-end ${
-          showMenu ? "bg-main" : "bg-none"
-        } ${showMenu ? "z-100 fixed left-0 top-0 h-full w-full" : ""}`}
+        className={` z-10 flex flex-col transition-all duration-500 ease-in-out md:flex-row md:justify-end ${showMenu ? "bg-main" : "bg-none"
+          } ${showMenu ? "z-100 fixed left-0 top-0 h-full w-full" : ""}`}
       >
         {showMenu ? (
           <IoIosCloseCircleOutline
@@ -56,9 +55,8 @@ export default function Navigation() {
           />
         )}
         <ul
-          className={`mt-16 flex items-center divide-y-2 divide-white/50 text-center md:mt-0 md:flex md:flex-row md:divide-none ${
-            showMenu ? "flex-col" : "hidden"
-          } `}
+          className={`mt-16 flex items-center divide-y-2 divide-white/50 text-center md:mt-0 md:flex md:flex-row md:divide-none ${showMenu ? "flex-col" : "hidden"
+            } `}
         >
           <li className={` w-full ${showMenu ? "" : "hidden"}}`}>
             <a
@@ -82,7 +80,7 @@ export default function Navigation() {
           </li>
           <li className={` w-full ${showMenu ? "" : "hidden"}}`}>
             <a
-              href="/#experience"
+              href="/#projects"
               className="font-2 relative flex items-center justify-center gap-3 p-5 font-sans text-xl font-semibold text-white decoration-2 underline-offset-4 hover:text-black hover:underline active:text-light-shade-500 md:m-2 md:p-2 md:text-base md:font-normal"
               onClick={handleLinkClick}
             >
