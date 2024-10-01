@@ -61,7 +61,7 @@ export default function Navigation() {
           <li className={` w-full ${showMenu ? "" : "hidden"}}`}>
             <a
               href={"/#about"}
-              className="font-2 relative flex items-center justify-center gap-3 p-5 font-sans text-xl font-semibold text-white decoration-2 underline-offset-4 hover:text-black hover:underline active:text-light-shade-500 md:m-2 md:p-2 md:text-base md:font-normal"
+              className="font-2 relative flex items-center justify-center gap-3 p-5 font-sans text-xl font-semibold text-white decoration-2 underline-offset-4 hover:text-light-shade-500 hover:underline active:text-black md:m-2 md:p-2 md:text-lg md:font-normal"
               onClick={handleLinkClick}
             >
               About
@@ -71,7 +71,7 @@ export default function Navigation() {
           <li className={` w-full ${showMenu ? "" : "hidden"}}`}>
             <a
               href="/#experience"
-              className="font-2 relative flex items-center justify-center gap-3 p-5 font-sans text-xl font-semibold text-white decoration-2 underline-offset-4 hover:text-black hover:underline active:text-light-shade-500 md:m-2 md:p-2 md:text-base md:font-normal"
+              className="font-2 relative flex items-center justify-center gap-3 p-5 font-sans text-xl font-semibold text-white decoration-2 underline-offset-4 hover:text-light-shade-500 hover:underline active:text-black md:m-2 md:p-2 md:text-lg md:font-normal"
               onClick={handleLinkClick}
             >
               Experience
@@ -81,7 +81,7 @@ export default function Navigation() {
           <li className={` w-full ${showMenu ? "" : "hidden"}}`}>
             <a
               href="/#projects"
-              className="font-2 relative flex items-center justify-center gap-3 p-5 font-sans text-xl font-semibold text-white decoration-2 underline-offset-4 hover:text-black hover:underline active:text-light-shade-500 md:m-2 md:p-2 md:text-base md:font-normal"
+              className="font-2 relative flex items-center justify-center gap-3 p-5 font-sans text-xl font-semibold text-white decoration-2 underline-offset-4 hover:text-light-shade-500 hover:underline active:text-black md:m-2 md:p-2 md:text-lg md:font-normal"
               onClick={handleLinkClick}
             >
               Projects
@@ -91,7 +91,7 @@ export default function Navigation() {
           <li className={`w-full ${showMenu ? "" : "hidden"}}`}>
             <a
               href={"/#contact"}
-              className="font-2 relative flex items-center justify-center gap-3 p-5 font-sans text-xl font-semibold text-white decoration-2 underline-offset-4 hover:text-black hover:underline active:text-light-shade-500 md:m-2 md:p-2 md:text-base md:font-normal"
+              className="font-2 relative flex items-center justify-center gap-3 p-5 font-sans text-xl font-semibold text-white decoration-2 underline-offset-4 hover:text-light-shade-500 hover:underline active:text-black md:m-2 md:p-2 md:text-lg md:font-normal"
               onClick={handleLinkClick}
             >
               Contact
