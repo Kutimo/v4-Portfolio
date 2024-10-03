@@ -2,7 +2,7 @@ import programmer_illustration from "$svg/illustrations/programmer_illustration.
 
 export default function About() {
   return (
-    <section id="experience" className="mt-10 flex h-fit w-full flex-col text-white">
+    <section id="about" className="mt-10 flex h-fit w-full flex-col text-white">
       <h3 className="mx-5 w-fit bg-dark-accent p-3 font-sans text-3xl font-bold text-light-shade-100 drop-shadow-lg-black md:text-5xl">
         About me
       </h3>

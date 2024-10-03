@@ -28,12 +28,8 @@
 
 # Add buttons to change layout of icons and projects to be a list.
 
-# Add Vercel analytics: Start by installing @vercel/analytics in your existing project.
-
 # project size for mobile
 
 # Add bg color for mobile devices
 
 # fix size for mobile projects
-
-# fix nav links (not working properly)
