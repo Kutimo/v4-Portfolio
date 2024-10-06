@@ -14,7 +14,7 @@ export default function ProjectWrapper() {
               alt={project.title}
               width={375}
               height={275}
-              className="pointer-events-none aspect-video h-full w-full object-fill transition-opacity duration-300 group-hover:opacity-0"
+              className="pointer-events-none object-fill h-full w-full transition-opacity duration-300 group-hover:opacity-0"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-dark-accent p-3 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <h4 className="font-sans text-xl font-bold">{project.title}</h4>
