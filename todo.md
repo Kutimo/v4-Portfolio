@@ -1,5 +1,3 @@
-# META tags
-
 # Color contrast for cards.
 
 # repeat hello world for hero
@@ -24,6 +22,6 @@
 
 # project size for mobile
 
-# Add bg color for mobile devices
-
 # fix size for mobile projects
+
+# change order of skills in tech icons
