@@ -22,6 +22,6 @@
 
 # project size for mobile
 
-# fix size for mobile projects
+# [x] fix size for mobile projects
 
 # change order of skills in tech icons

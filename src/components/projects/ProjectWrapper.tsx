@@ -26,7 +26,7 @@ export default function ProjectWrapper() {
                 Website
               </a>
             </div>
-            <p className="absolute -bottom-5 right-1/2 rounded-md bg-dark-accent p-3 font-serif font-semibold text-white">
+            <p className="absolute -bottom-6 md:-bottom-5 right-1/2 rounded-md bg-dark-accent p-1 md:p-3 font-serif font-semibold text-white">
               {project.date}
             </p>
           </div>
