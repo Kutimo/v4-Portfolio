@@ -18,8 +18,8 @@ export default function ExperienceList() {
                 </h3>
                 <p className="mt-1 font-sans text-sm italic">{date}</p>
               </div>
-              <ul className="flex flex-col items-center gap-2">
-                <li className="text-gray-950 sm:w-[35ch] md:w-[60ch]">{description}</li>
+              <ul className="flex flex-col items-center gap-2 sm:w-[35ch] md:w-[60ch]">
+                <li className="text-gray-950  ">{description}</li>
                 <li className="flex flex-wrap gap-1.5">
                   {tech && tech.map((tag, j) => <Tag key={j} text={tag} />)}
                 </li>
