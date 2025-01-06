@@ -1,4 +1,5 @@
-import not_color_run from "$images/notTheColorRun.png"
+import Corner_Logo from "$images/Corner_Logo.svg"
+import merkelappen from "$images/merkelappen.avif"
 
 export const ProjectConfig: Array<{
   img: string
@@ -8,27 +9,19 @@ export const ProjectConfig: Array<{
   url: string
 }> = [
   {
-    img: not_color_run,
-    title: "Not the color run",
-    date: "March 2021",
+    img: merkelappen,
+    title: "Merkelappen",
+    date: "Current",
     description:
-      "A clone of the color run website, where i used the the color run website as a inspiration as a project to learn the basics of HTML, CSS and JavaScript. ",
-    url: "lorem",
+      "One of my current projects for Merkelappen is a e-commerce website for a local company called Merkelappen. ",
+    url: "https://www.merkelappen.no",
   },
   {
-    img: not_color_run,
-    title: "Not the color run 2",
-    date: "March 2021",
+    img: Corner_Logo,
+    title: "Corner ",
+    date: "Current",
     description:
-      "A clone of the color run website, where i used the the color run website as a inspiration as a project to learn the basics of HTML, CSS and JavaScript. ",
-    url: "lorem",
-  },
-  {
-    img: not_color_run,
-    title: "Not the color run 3",
-    date: "March 2021",
-    description:
-      "A clone of the color run website, where i used the the color run website as a inspiration as a project to learn the basics of HTML, CSS and JavaScript. ",
-    url: "lorem",
+      "Under development. A website for a music and sports bar in Sandefjord. ",
+    url: "",
   },
 ]

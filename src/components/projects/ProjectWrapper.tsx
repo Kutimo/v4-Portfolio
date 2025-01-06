@@ -21,6 +21,8 @@ export default function ProjectWrapper() {
               <p className="p-1 text-center">{project.description}</p>
               <a
                 href={project.url}
+                target="_blank"
+                rel="noreferrer"
                 className="border-light border-2 border-light-shade-400 p-2 text-lg font-medium text-light-shade-100 shadow-md transition-all duration-300 ease-in hover:rounded-none hover:border-light-shade-200 hover:bg-light-shade-400 hover:text-black md:text-xl"
               >
                 Website
