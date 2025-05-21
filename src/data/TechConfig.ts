@@ -15,6 +15,7 @@ import PythonIcon from "$svg/tech/Python_Logo.svg"
 import MySQLIcon from "$svg/tech/MySQL_Logo.svg"
 import CsIcon from "$svg/tech/Cs_Logo.svg"
 import VueIcon from "$svg/tech/Vue_Logo.svg"
+import LinuxLogo from "$svg/tech/Linux_Logo.svg"
 
 export const TechIcons: Array<{ name: string; xp: number; icon: string }> = [
   // XP Level 4
@@ -95,6 +96,11 @@ export const TechIcons: Array<{ name: string; xp: number; icon: string }> = [
   {
     name: "Svelte",
     icon: svelteIcon,
+    xp: 2,
+  },
+  {
+    name: "Linux",
+    icon: LinuxLogo,
     xp: 2,
   },
 

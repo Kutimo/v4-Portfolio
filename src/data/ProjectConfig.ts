@@ -19,9 +19,9 @@ export const ProjectConfig: Array<{
   {
     img: Corner_Logo,
     title: "Corner ",
-    date: "Current",
+    date: "March /2023",
     description:
-      "Under development. A website for a music and sports bar in Sandefjord. ",
-    url: "",
+      "One of my previous projects for Corner, website for a music and sports bar in Sandefjord. ",
+    url: "https://www.cornersfj.no",
   },
 ]
