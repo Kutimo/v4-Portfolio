@@ -14,7 +14,7 @@ export default function ExperienceList() {
               <div>
                 <h3 className="text-xl md:text-2xl">
                   {title}{" "}
-                  <span className="text-lg text-blue-600 md:text-xl">{place}</span>
+                  <span className="text-lg text-blue-900 md:text-xl">{place}</span>
                 </h3>
                 <p className="mt-1 font-sans text-sm italic">{date}</p>
               </div>

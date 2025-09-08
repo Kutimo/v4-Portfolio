@@ -12,11 +12,7 @@ export default function About() {
             I'm a full-stack developer from Norway
           </h4>
           <p className="mt-5 max-w-[55ch] text-xl text-gray-950 ">
-            I&apos;ve been developing various projects in a variety of languages such as
-            Python, JavaScript and React for many years, but over the past 3 years I’ve
-            discovered my passion for website development. In this time, I have built up
-            my skill set and developed websites for a variety of individuals and
-            businesses.
+            I&apos;ve been developing projects in various languages such as Python, JavaScript, React, and .NET for many years. While I’ve built a strong passion for web development over the past 3 years—creating websites for individuals and businesses—I also work on broader software projects beyond the web.
           </p>
         </div>
         <img
