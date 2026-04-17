@@ -16,6 +16,7 @@ import MySQLIcon from "$svg/tech/MySQL_Logo.svg"
 import CsIcon from "$svg/tech/Cs_Logo.svg"
 import VueIcon from "$svg/tech/Vue_Logo.svg"
 import LinuxLogo from "$svg/tech/Linux_Logo.svg"
+import PostgressLogo from "$svg/tech/Postgress_Logo.svg"
 
 export const TechIcons: Array<{ name: string; xp: number; icon: string }> = [
   // XP Level 4
@@ -77,17 +78,33 @@ export const TechIcons: Array<{ name: string; xp: number; icon: string }> = [
     xp: 3,
   },
 
+  {
+    name: "Postgress",
+    icon: PostgressLogo,
+    xp: 3,
+  },
+  {
+    name: "MySQL",
+    icon: MySQLIcon,
+    xp: 3,
+  },
+  {
+    name: "Linux",
+    icon: LinuxLogo,
+    xp: 3,
+  },
+  {
+    name: "C#",
+    icon: CsIcon,
+    xp: 3,
+  },
   // XP Level 2
   {
     name: "Figma",
     icon: figmaIcon,
     xp: 2,
   },
-  {
-    name: "MySQL",
-    icon: MySQLIcon,
-    xp: 2,
-  },
+
   {
     name: "Python",
     icon: PythonIcon,
@@ -98,18 +115,9 @@ export const TechIcons: Array<{ name: string; xp: number; icon: string }> = [
     icon: svelteIcon,
     xp: 2,
   },
-  {
-    name: "Linux",
-    icon: LinuxLogo,
-    xp: 2,
-  },
 
   // XP Level 1
-  {
-    name: "C#",
-    icon: CsIcon,
-    xp: 1,
-  },
+
   {
     name: "Rust",
     icon: rustIcon,
